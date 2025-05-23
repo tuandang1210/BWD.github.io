@@ -98,7 +98,7 @@ body {
 #hero h1 {
   color: rgb(187, 182, 183);
 }
-#hero button {
+#hero a {
   background-image: url("img/button.png");
   background-color: transparent;
   color: palevioletred;
@@ -108,12 +108,13 @@ body {
   cursor: pointer;
   font-weight: 700;
   font-size: 15px;
+  text-decoration: none;
 }
 
 #feature {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -122,11 +123,11 @@ body {
   border-radius: 15px;
   padding: 25px 15px;
   margin: 25px 40px;
-  box-shadow: 10px 10px 20px rgb(141, 139, 139);
+  box-shadow: 5px 5px 5px rgb(179, 178, 178);
 }
 
 #feature .card:hover {
-  box-shadow: 10px 10px 54px rgb(0, 0, 0);
+  box-shadow: 6px 6px 6px rgb(141, 140, 140);
 }
 
 #feature .card :nth-child(1) {
@@ -156,7 +157,7 @@ body {
   width: 280px; 
   padding: 10px 17px;
   margin-bottom: 15px;
-  position: relative;
+  
 }
 
 #product .card:hover {
@@ -289,7 +290,7 @@ body {
 
 .form button {
   background-color: rgb(73, 215, 73);
-  color: white;
+  color: black;
 }
 
 /* Shop Page*/
@@ -334,7 +335,8 @@ body {
 
 #prodetails {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #prodetails .single-pro-image{
@@ -393,7 +395,6 @@ body {
 #prodetails .single-pro-details span {
   line-height: 25px;
 }
-
 /* Blog Page */
 #page-header.blog-header {
   background-image: url("img/banner/b19.jpg");
@@ -468,4 +469,96 @@ body {
   font-size: 20px;
   font-weight: 700;
   color: #000;
+}
+.mobile {
+    display: none;
+}
+
+#close {
+  display: none;
+}
+/* responsive */
+
+@media (max-width: 799px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100%;
+    width: 250px;
+    background-color: #E3E6F3;
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
+    padding: 80px 0 0 10px;
+    z-index: 999;
+  }
+  .nav.active{
+    right: 0;
+  }
+  
+  .mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile i {
+    font-size: 25px;
+    padding-left: 10px;
+  }
+
+  #close {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 25px;
+    display: flex;
+  }
+
+  #hero {
+  height: 70vh;
+  padding: 0 80px;
+  background-position: top 30% right 30%;
+}
+
+/* Product */
+
+#product .card {
+  width: 150px; 
+  padding: 13px 17px;
+  margin: 20px 10px 20px 10px;
+}
+
+#product {
+  justify-content: center;
+}
+
+.card .card-body .bi-cart {
+  width: 30px;
+  height: 30px;
+}
+ .form {
+  width: 100%;
+ }
+
+ /*single-pro-details */
+
+ #prodedetails {
+  display: flex;
+  flex-direction: column;
+ }
+
+ #prodetails .single-pro-image {
+  width: 100%;
+  
+  margin-right: 0;
+ }
+ #prodetails .single-pro-details {
+  width: 100%;
+  padding: 20px 10px 0 10px;
+ }
+
 }
