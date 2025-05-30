@@ -121,7 +121,7 @@ body {
 #feature .card {
   text-align: center;
   border-radius: 15px;
-  padding: 25px 15px;
+  padding: 25px 10px;
   margin: 25px 40px;
   box-shadow: 5px 5px 5px rgb(179, 178, 178);
 }
@@ -148,10 +148,10 @@ body {
 
 #product {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-top: 20px;
   flex-wrap: wrap;
-  margin: 0 90px 0 90px;
+  margin: 0 60px 0 60px;
 }
 #product .card {
   width: 280px; 
@@ -239,6 +239,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0 90px 0 90px;
 }
 
@@ -283,9 +284,8 @@ body {
 }
 
 .form input, textarea {
-  width: 700px;
-  padding: 12px 15px;
-  outline: none;
+  width: 100%;
+  padding: 12px 17px;
 }
 
 .form button {
@@ -519,7 +519,7 @@ body {
   }
 
   #hero {
-  height: 70vh;
+  height: 80vh;
   padding: 0 80px;
   background-position: top 30% right 30%;
 }
@@ -534,6 +534,7 @@ body {
 
 #product {
   justify-content: center;
+  margin: 0 50px 0 50px;
 }
 
 .card .card-body .bi-cart {
@@ -561,4 +562,22 @@ body {
   padding: 20px 10px 0 10px;
  }
 
+}
+
+@media (max-width: 540px) {
+  #hero {
+    height: 80vh;
+    padding: 0 20px;
+    width: 100%;
+    background-position: top 30% right 25%;
+  }
+  #hero h4 {
+    font-size: 45px;
+  }
+  #hero h2 {
+    font-size: 45px;
+  }
+  #hero h1 {
+    font-size: 45px;
+  }
 }
