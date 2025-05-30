@@ -47,3 +47,18 @@ function validateForm() {
     }
     alert("Message sent successfully!");
   }
+
+// check password regis
+function checkPasswords() {
+      const pw = document.getElementById('regPassword').value;
+      const cpw = document.getElementById('confirmPassword').value;
+      const errorDiv = document.getElementById('passwordError');
+
+      if (pw !== cpw) {
+        errorDiv.style.display = 'block';
+        return false;
+      } else {
+        errorDiv.style.display = 'none';
+        return true;
+      }
+    }
