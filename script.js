@@ -62,3 +62,16 @@ function checkPasswords() {
         return true;
       }
     }
+
+// check login
+  function CheckAccount() {
+    event.preventDefault();
+    const email = document.getElementById("loginEmail").value.trim();
+    const pass = document.getElementById("loginPassword").value.trim();
+
+    if (email === 'admin@email' && pass === 'adminpass') {
+    window.location.href = "index.html";
+    } else {
+    alert("Sai tài khoản hoặc mật khẩu");
+    }
+  }
