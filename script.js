@@ -70,7 +70,7 @@ function checkPasswords() {
     const pass = document.getElementById("loginPassword").value.trim();
 
     if (email === 'admin@email' && pass === 'adminpass') {
-    window.location.href = "index.html";
+    window.location.href = "homepage.html";
     } else {
     alert("Sai tài khoản hoặc mật khẩu");
     }
