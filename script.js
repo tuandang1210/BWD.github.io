@@ -64,14 +64,15 @@ function checkPasswords() {
     }
 
 // check login
-  function CheckAccount() {
-    event.preventDefault();
-    const email = document.getElementById("loginEmail").value.trim();
-    const pass = document.getElementById("loginPassword").value.trim();
+function CheckAccount() {
+  const email = document.getElementById("loginEmail").value.trim();
+  const pass = document.getElementById("loginPassword").value.trim();
 
-    if (email === 'admin@email' && pass === 'adminpass') {
+  if (email === 'admin@email' && pass === 'adminpass') {
     window.location.href = "homepage.html";
-    } else {
-    alert("Sai tài khoản hoặc mật khẩu");
-    }
+    return false;
+  } else {
+    alert("Invalid email or password!");
+    return false;
   }
+}
