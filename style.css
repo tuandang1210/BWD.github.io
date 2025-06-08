@@ -149,14 +149,16 @@ body {
 #product {
   display: flex;
   flex-wrap: wrap;
+  
   padding-top: 20px;
   margin: 0 60px 0 60px;
 }
 #product .card {
   width: 280px; 
   padding: 10px 17px;
+  margin: auto;
+  margin-top: 15px;
   margin-bottom: 15px;
-  
 }
 
 #product .card:hover {
