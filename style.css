@@ -148,9 +148,8 @@ body {
 
 #product {
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 20px;
   flex-wrap: wrap;
+  padding-top: 20px;
   margin: 0 60px 0 60px;
 }
 #product .card {
@@ -479,7 +478,7 @@ body {
 }
 /* responsive */
 
-@media (max-width: 799px) {
+@media (max-width: 768px) {
   .nav {
     display: flex;
     flex-direction: column;
@@ -529,12 +528,12 @@ body {
 #product .card {
   width: 150px; 
   padding: 13px 17px;
-  margin: 20px 10px 20px 10px;
+  margin: 20px 0px 20px 0px;
 }
 
 #product {
   justify-content: center;
-  margin: 0 50px 0 50px;
+  margin: 0 20px 0 20px;
 }
 
 .card .card-body .bi-cart {
