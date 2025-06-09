@@ -5,30 +5,27 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home Page</title>
+        <title>Product Details</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="style.css">
-        
     </head>
 
     <body>
         <section id="header">
-            <a href="#"><img class="logo"  src="img/logo.png" alt="logo" ></a>
+            <a href="#"><img class="logo" src="img/logo.png" alt="logo"></a>
             <div>
-                <ul class="nav" >
-                    
-                    <li class="nav-item"><a class=" nav-link active"  href="homepage.html">Home</a></li>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link active" href="homepage.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="cart.html"><i class="bi bi-bag-fill"></i></a></li>
-                    <li class="nav-item"><a class="nav-link"  href="#" ></a><i id="close" class="bi bi-x-lg"></i></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i id="close" class="bi bi-x-lg"></i></a></li>
                 </ul>
             </div>
             <div class="mobile">
-                
                 <a class="nav-link" href="cart.html"><i class="bi bi-bag-fill"></i></a>
                 <i class="bi bi-justify" id="bar"></i>
             </div>
@@ -37,7 +34,6 @@
         <section id="prodetails" class="section-p1">
             <div class="single-pro-image">
                 <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
-
                 <div class="small-img-group">
                     <div class="small-img-col">
                         <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
@@ -52,27 +48,26 @@
                         <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
                     </div>
                 </div>
-
             </div>
 
             <div class="single-pro-details">
-                <h6>Home / T-Shirt</h6>
-                <h4>Men's Fashion T shirt</h4>
-                <h2>$139.00</h2>
-                <select>
+                <h6 id="breadcrumb">Home / T-Shirt</h6>
+                <h4 id="product-name">Men's Fashion T shirt</h4>
+                <h2 id="product-price">$139.00</h2>
+                <select id="product-size">
                     <option>Select Size</option>
                     <option>XL</option>
                     <option>XXL</option>
                     <option>Small</option>
                     <option>Large</option>
                 </select>
-                <input type="number" value="1" min="1"">
-                <button class="normal">Add To Cart</button>
+                <input type="number" value="1" min="1" id="product-quantity">
+                <button class="normal" id="add-to-cart">Add To Cart</button>
                 <h4>Product Details</h4>
-                <span>The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per<br>
-                    sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk<br>
-                    jersey knit provides unmatched comfort with each wear. Featuring a taped neck<br>
-                    and shoulder, and a seamless double-needle collar, and available in a range<br>
+                <span id="product-description">The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per
+                    sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk
+                    jersey knit provides unmatched comfort with each wear. Featuring a taped neck
+                    and shoulder, and a seamless double-needle collar, and available in a range
                     of colors, it offers it all in the ultimate head-turning package.
                 </span>
             </div>
@@ -80,13 +75,13 @@
 
         <section id="feature2">
             <h2>Feature Products</h2>
-            <p>Summer Collection New Morden Design</p>
+            <p>Summer Collection New Modern Design</p>
             <div id="product">
                 <div class="card">
                     <img src="img/products/n1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <span>adidas</span>
-                        <h6 class="card-title">Happy Sell</h6>  
+                        <h6 class="card-title">Happy Sell</h6>
                         <div class="star">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -95,14 +90,14 @@
                             <i class="bi bi-star-fill"></i>
                         </div>
                         <h5>78$</h5>
-                        <a style="color: black;" href="#"><i class="bi bi-cart"></i></a>
+                        <a style="color: black;" href="sproduct.html?product=n1"><i class="bi bi-cart"></i></a>
                     </div>
                 </div>
                 <div class="card">
                     <img src="img/products/n2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <span>adidas</span>
-                        <h6 class="card-title">Happy Sell</h6>  
+                        <h6 class="card-title">Happy Sell</h6>
                         <div class="star">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -111,14 +106,14 @@
                             <i class="bi bi-star-fill"></i>
                         </div>
                         <h5>78$</h5>
-                        <a style="color: black;" href="#"><i class="bi bi-cart"></i></a>
+                        <a style="color: black;" href="sproduct.html?product=n2"><i class="bi bi-cart"></i></a>
                     </div>
                 </div>
                 <div class="card">
                     <img src="img/products/n3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <span>adidas</span>
-                        <h6 class="card-title">Happy Sell</h6>  
+                        <h6 class="card-title">Happy Sell</h6>
                         <div class="star">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -127,14 +122,14 @@
                             <i class="bi bi-star-fill"></i>
                         </div>
                         <h5>78$</h5>
-                        <a style="color: black;" href="#"><i class="bi bi-cart"></i></a>
+                        <a style="color: black;" href="sproduct.html?product=n3"><i class="bi bi-cart"></i></a>
                     </div>
                 </div>
                 <div class="card">
                     <img src="img/products/n4.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <span>adidas</span>
-                        <h6 class="card-title">Happy Sell</h6>  
+                        <h6 class="card-title">Happy Sell</h6>
                         <div class="star">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -143,42 +138,24 @@
                             <i class="bi bi-star-fill"></i>
                         </div>
                         <h5>78$</h5>
-                        <a style="color: black;" href="#"><i class="bi bi-cart"></i></a>
+                        <a style="color: black;" href="sproduct.html?product=n4"><i class="bi bi-cart"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="newsletter">
-                    <div class="letter">
-                        <h4>Sign up for Newsletter</h4>
-                        <p>Get Email updates about our letter shop special offers</></p>
-                    </div>
-                    <div class="form">
-                        <div class="input-group mb-3">
-                            <input type="text" id="emailInput" class="form-control" placeholder="Your Email Address">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sign Up</button>
-                        </div>
-                    </div>
-                </section>
-
-        <script>
-            var MainImg = document.getElementById("MainImg");
-            var smallimg = document.getElementsByClassName("small-img");
-
-            smallimg[0].onclick = function(){
-                MainImg.src = smallimg[0].src;
-            }
-            smallimg[1].onclick = function(){
-                MainImg.src = smallimg[1].src;
-            }
-            smallimg[2].onclick = function(){
-                MainImg.src = smallimg[2].src;
-            }
-            smallimg[3].onclick = function(){
-                MainImg.src = smallimg[3].src;
-            }
-        </script>
+            <div class="letter">
+                <h4>Sign up for Newsletter</h4>
+                <p>Get Email updates about our letter shop special offers</p>
+            </div>
+            <div class="form">
+                <div class="input-group mb-3">
+                    <input type="text" id="emailInput" class="form-control" placeholder="Your Email Address">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sign Up</button>
+                </div>
+            </div>
+        </section>
 
         <script src="script.js"></script>
     </body>
