@@ -70,7 +70,7 @@ function checkAccount() {
     const pass = document.getElementById("loginPassword").value.trim();
 
     if (email === 'admin@email.com' && pass === 'adminpass') {
-        window.location.href = "homepage.html";
+        window.location.href = "/BWD.github.io/homepage.html";
         return false;
     } else {
         alert("Invalid email or password!");
